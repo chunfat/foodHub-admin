@@ -5,10 +5,10 @@
         <div class="info-widget-inner">
           <div class="stats">
             <div class="stats-number">
-              <i class="ion ion-md-arrow-up text-primary stats-icon"></i>
-              59
+              <i class="ion ion-md-arrow-down text-danger stats-icon"></i>
+              $11M
             </div>
-            <div class="stats-title">{{'dashboard.elements' | translate}}</div>
+            <div class="stats-title">{{'Revenue lost' | translate}}</div>
           </div>
         </div>
       </vuestic-widget>
@@ -18,10 +18,10 @@
         <div class="info-widget-inner">
           <div class="stats">
             <div class="stats-number">
-              <i class="ion ion-md-arrow-down text-danger stats-icon"></i>
-              12
+              <i class="ion ion-md-arrow-up text-primary stats-icon"></i>
+              35%
             </div>
-            <div class="stats-title">{{'dashboard.versions' | translate}}</div>
+            <div class="stats-title">{{'Reduction in Waste' | translate}}</div>
           </div>
         </div>
       </vuestic-widget>
@@ -32,9 +32,9 @@
           <div class="info-widget-inner has-chart">
             <div class="stats">
               <div class="stats-number">
-                425
+                15
               </div>
-              <div class="stats-title">Commits</div>
+              <div class="stats-title">Stores To Join</div>
             </div>
             <div class="chart-container">
               <vuestic-progress-bar type="circle" ref="circleProgress" :colorName="'white'" :backgroundColorName="'danger'"
@@ -50,9 +50,9 @@
           <div class="stats">
             <div class="stats-number">
               <i class="ion ion-md-people stats-icon icon-wide"></i>
-              5
+              10217
             </div>
-            <div class="stats-title">{{'dashboard.teamMembers' | translate}}</div>
+            <div class="stats-title">{{'Users' | translate}}</div>
           </div>
         </div>
       </vuestic-widget>
@@ -65,7 +65,7 @@
     name: 'dashboard-info-widgets',
 
     mounted () {
-      this.$refs.circleProgress.$data.value = 70
+      this.$refs.circleProgress.$data.value = 83
     }
   }
 </script>

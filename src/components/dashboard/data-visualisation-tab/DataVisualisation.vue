@@ -2,9 +2,9 @@
   <div class="data-visualisation-tab dashboard-tab">
     <div class="row">
       <div class="col-md-6">
-        <div class="chart-container">
-          <vuestic-chart v-bind:data="donutChartData" type="donut"></vuestic-chart>
-        </div>
+        <vuestic-widget class="chart-widget" :headerText="'Transactions' | translate">
+          <vuestic-chart :data="multiChartData" type="line"></vuestic-chart>
+        </vuestic-widget>
       </div>
       <div class="col-md-6">
         <vuestic-data-table
@@ -25,17 +25,17 @@
   import Vue from 'vue'
   import BadgeColumn from 'components/tables/BadgeColumn.vue'
   import TableData from './TableData'
-  import DonutChartData from './DonutChartData'
+  import MultiChartData from 'data/charts/multiline_chart'
   import FieldsDef from './fields-definition'
 
   Vue.component('badge-column', BadgeColumn)
 
   export default {
-    name: 'data-visualisation-tab',
+    name: 'summary',
 
     data () {
       return {
-        donutChartData: DonutChartData,
+        multiChartData: MultiChartData,
         apiMode: false,
         sortFunctions: FieldsDef.sortFunctions,
         tableData: TableData,

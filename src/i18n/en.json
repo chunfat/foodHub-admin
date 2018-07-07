@@ -35,14 +35,14 @@
     "bubbleChart": "Bubble Chart"
   },
   "dashboard": {
-    "dataVisualization": "Data Visualization",
+    "dataVisualization": "Summary",
     "success": "SUCCESS",
     "successMessage": "You successfully read this important alert message.",
     "elements": "Elements",
     "features": "Features",
     "setupProfile": "Setup Profile",
     "teamMembers": "Team Members",
-    "usersAndMembers": "Users & Members",
+    "usersAndMembers": "Allocation",
     "versions": "Versions"
   },
   "notificationsPage": {

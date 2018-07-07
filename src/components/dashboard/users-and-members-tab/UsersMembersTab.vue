@@ -1,68 +1,40 @@
 <template>
-  <div class="users-members-tab dashboard-tab">
+  <div class="users-member-tab dashboard-tab">
     <div class="row">
-      <div class="col-md-3 d-flex justify-content-center align-items-center">
-        <vuestic-profile-card :name="'Veronique Lee'" :location="'Malaga, Spain'" photoSource="http://i.imgur.com/NLrdqsk.png"
-                              :social="{twitter: 'twitter.com', facebook: 'facebook.com',
-                                  instagram: 'instagram.com'}">
-        </vuestic-profile-card>
-      </div>
-      <div class="col-md-9 d-flex">
-        <vuestic-chat v-model="chatMessages"></vuestic-chat>
+      <div class="col-md-6">
+        <img src="https://i.imgur.com/jMb3tzo.png" style="width:500px;height:500px;">
       </div>
     </div>
   </div>
 </template>
-
 <script>
-  export default {
-    name: 'users-members-tab',
+  import DRChartData from 'data/charts/disposed_recycled'
 
-    data () {
+  export default {
+    name: 'users-members-tb',
+
+    data() {
       return {
-        chatMessages: [
-          {
-            text: 'Hello! So glad you liked my work. Do you want me to shoot you?',
-            yours: false
-          },
-          {
-            text: 'Yeah, that would be cool. Maybe this Sunday at 3 pm?',
-            yours: true
-          },
-          {
-            text: 'Sounds great! See you later!',
-            yours: false
-          },
-          {
-            text: 'Should I bring a lightbox with me?',
-            yours: true
-          },
-          {
-            text: 'No, thanks. There is no need. Can we set up a meeting earlier?',
-            yours: false
-          },
-          {
-            text: 'I\'m working on Vuestic, so let\'s meet at 3pm. Thanks!',
-            yours: true
-          }
-        ]
+        drChartData: DRChartData,
+        apiMode: false,
+        onEachSide: 1
       }
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  .vuestic-profile-card {
-    margin-left: 1rem;
+  @import "../../../sass/_variables.scss";
+  @import "~bootstrap/scss/functions";
+  @import "~bootstrap/scss/variables";
+  @import "~bootstrap/scss/mixins/breakpoints";
 
-    @include media-breakpoint-up(md) {
-      margin-top: -$tab-content-pt;
-    }
-
-    @include media-breakpoint-down(md) {
-      margin-bottom: $tab-content-pt;
-      margin-left: 0;
-    }
+  .chart-container {
+    padding: 0 2rem;
+    height: 24rem;
+  }
+  .col-md-6 {
+    margin: auto;
   }
 
 
