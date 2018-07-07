@@ -7,16 +7,16 @@ export default {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
-      label: 'Debit',
+      label: 'Sales',
       backgroundColor: utils.hex2rgb(palette.primary, 0.6).css,
       borderColor: palette.transparent,
-      data: [40, 39, 10, 40, 39, 80, 40]
+      data: [40, 39, 30, 34, 29, 50, 44]
     },
     {
-      label: 'Credit',
-      backgroundColor: utils.hex2rgb(palette.info, 0.6).css,
+      label: 'Returned Customer',
+      backgroundColor: utils.hex2rgb(palette.info, 0.8).css,
       borderColor: palette.transparent,
-      data: [50, 20, 70, 30, 10, 5, 70]
+      data: [30, 20, 25, 30, 21, 25, 20]
     }
   ],
 }

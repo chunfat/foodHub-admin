@@ -28,8 +28,8 @@
   },
   "charts": {
     "horizontalBarChart": "Monthly Food Disposed",
-    "verticalBarChart": "Monthly Food Expired",
-    "lineChart": "Line Chart",
+    "verticalBarChart": "Monthly Food Saved Vs Disposed",
+    "lineChart": "Sales vs Returned Customers Chart",
     "pieChart": "Pie Chart",
     "donutChart": "Donut Chart",
     "bubbleChart": "Bubble Chart"

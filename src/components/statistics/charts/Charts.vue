@@ -1,14 +1,9 @@
 <template>
   <div class="charts-page">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <vuestic-widget class="chart-widget" :headerText="'charts.verticalBarChart' | translate">
           <vuestic-chart :data="verticalBarChartData" type="vertical-bar"></vuestic-chart>
-        </vuestic-widget>
-      </div>
-      <div class="col-md-6">
-        <vuestic-widget class="chart-widget" :headerText="'charts.horizontalBarChart' | translate">
-          <vuestic-chart :data="horizontalBarChartData" type="horizontal-bar"></vuestic-chart>
         </vuestic-widget>
       </div>
     </div>
@@ -21,7 +16,7 @@
       </div>
     </div>
 
-    <div class="row">
+   <!-- <div class="row">
       <div class="col-md-6">
         <vuestic-widget class="chart-widget" :headerText="'charts.pieChart' | translate">
           <vuestic-chart :data="pieChartData" type="pie"></vuestic-chart>
@@ -40,7 +35,7 @@
           <vuestic-chart :data="bubbleChartData" type="bubble"></vuestic-chart>
         </vuestic-widget>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
