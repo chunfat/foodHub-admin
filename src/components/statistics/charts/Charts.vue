@@ -2,6 +2,13 @@
   <div class="charts-page">
     <div class="row">
       <div class="col-md-12">
+        <vuestic-widget class="chart-widget" :headerText="'charts.ProductPurchaseChart' | translate">
+          <vuestic-chart :data="ProductPurchaseData" type="vertical-bar"></vuestic-chart>
+        </vuestic-widget>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
         <vuestic-widget class="chart-widget" :headerText="'charts.verticalBarChart' | translate">
           <vuestic-chart :data="verticalBarChartData" type="vertical-bar"></vuestic-chart>
         </vuestic-widget>
@@ -12,6 +19,15 @@
       <div class="col-md-12">
         <vuestic-widget class="chart-widget" :headerText="'charts.lineChart' | translate">
           <vuestic-chart :data="lineChartData" type="line"></vuestic-chart>
+        </vuestic-widget>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <vuestic-widget class="widget-viewport-height" headerText="Distributed Product in store">
+          <google-map></google-map>
         </vuestic-widget>
       </div>
     </div>
@@ -46,12 +62,15 @@
   import DonutChartData from 'data/charts/DonutChartData'
   import VerticalBarChartData from 'data/charts/VerticalBarChartData'
   import HorizontalBarChartData from 'data/charts/HorizontalBarChartData'
+  import ProductPurchaseData from 'data/charts/ProductPurchaseData'
   import SidebarLink from '../../admin/app-sidebar/components/SidebarLink'
+  import GoogleMap from './GoogleMap'
 
   export default {
     name: 'charts',
     components: {
-      SidebarLink
+      SidebarLink,
+      GoogleMap
     },
 
     data: function () {
@@ -61,7 +80,8 @@
         pieChartData: PieChartData,
         donutChartData: DonutChartData,
         verticalBarChartData: VerticalBarChartData,
-        horizontalBarChartData: HorizontalBarChartData
+        horizontalBarChartData: HorizontalBarChartData,
+        ProductPurchaseData: ProductPurchaseData
       }
     },
   }

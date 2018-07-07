@@ -50,6 +50,13 @@
           </span>
         </sidebar-link>
       </sidebar-link-group>
+       <sidebar-link
+        :to="{ name: 'product' }">
+        <span slot="title">
+          <span class="sidebar-menu-item-icon vuestic-icon vuestic-icon-dashboard"></span>
+          <span>{{ $t('menu.product') }}</span>
+        </span>
+      </sidebar-link>
     </template>
   </vuestic-sidebar>
 </template>
