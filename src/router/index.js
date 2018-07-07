@@ -59,6 +59,12 @@ export default new Router({
           default: true
         },
         {
+          name: 'product',
+          path: 'product',
+          component: lazyLoading('product/product'),
+          default: true
+        },
+        {
           path: 'statistics',
           component: EmptyParentComponent,
           children: [

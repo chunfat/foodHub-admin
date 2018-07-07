@@ -32,7 +32,8 @@
     "lineChart": "Sales vs Returned Customers Chart",
     "pieChart": "Pie Chart",
     "donutChart": "Donut Chart",
-    "bubbleChart": "Bubble Chart"
+    "bubbleChart": "Bubble Chart",
+    "ProductPurchaseChart": "Product Purchase / Time"
   },
   "dashboard": {
     "dataVisualization": "Summary",
@@ -186,7 +187,8 @@
     "uiElements": "UI Elements",
     "treeView": "Tree view",
     "dateTimePickers": "Date time pickers",
-    "fileUpload": "File Upload"
+    "fileUpload": "File Upload",
+    "product": "Product"
   },
   "messages": {
     "all": "See all messages",
