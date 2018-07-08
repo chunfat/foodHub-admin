@@ -28,7 +28,7 @@
         default: () => [
           {
             name: 'sentMessage',
-            details: { name: 'Vasily S' }
+            details: { name: 'New store' }
           },
           {
             name: 'uploadedZip',

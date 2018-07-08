@@ -10,7 +10,7 @@
     <notification-dropdown/>
     <language-dropdown/>
     <profile-dropdown>
-      <img src="http://i.imgur.com/nfa5itq.png"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/PICA.jpg/768px-PICA.jpg"/>
     </profile-dropdown>
   </vuestic-navbar>
 
@@ -22,15 +22,13 @@
   import LanguageDropdown from './components/dropdowns/LanguageDropdown'
   import ProfileDropdown from './components/dropdowns/ProfileDropdown'
   import NotificationDropdown from './components/dropdowns/NotificationDropdown'
-  import MessageDropdown from './components/dropdowns/MessageDropdown'
-
+  
   export default {
     name: 'app-navbar',
 
     components: {
       VuesticNavbar,
       HeaderSelector,
-      MessageDropdown,
       NotificationDropdown,
       LanguageDropdown,
       ProfileDropdown

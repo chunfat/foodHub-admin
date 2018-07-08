@@ -1,8 +1,8 @@
 <template>
   <div class="users-member-tab dashboard-tab">
     <div class="row">
-      <div class="col-md-6">
-        <img src="https://i.imgur.com/jMb3tzo.png" style="width:500px;height:500px;">
+      <div class="col-md-12">
+        <img src="https://i.imgur.com/jMb3tzo.png" style="width:100%;">
       </div>
     </div>
   </div>
@@ -13,7 +13,7 @@
   export default {
     name: 'users-members-tb',
 
-    data() {
+    data () {
       return {
         drChartData: DRChartData,
         apiMode: false,
@@ -32,9 +32,6 @@
   .chart-container {
     padding: 0 2rem;
     height: 24rem;
-  }
-  .col-md-6 {
-    margin: auto;
   }
 
 

@@ -19,38 +19,6 @@
             <span>{{ $t('menu.charts') }}</span>
           </span>
         </sidebar-link>
-        <sidebar-link
-          :to="{ name: 'progress-bars' }">
-          <span slot="title">
-            <span>{{ $t('menu.progressBars') }}</span>
-          </span>
-        </sidebar-link>
-      </sidebar-link-group>
-<<<<<<< HEAD
-=======
-      <sidebar-link-group>
-        <span slot="title">
-          <span class="sidebar-menu-item-icon vuestic-icon vuestic-icon-forms"></span>
-          <span>{{ $t('menu.forms') }}</span>
-        </span>
-        <sidebar-link
-          :to="{ name: 'form-elements' }">
-          <span slot="title">
-            <span>{{ $t('menu.formElements') }}</span>
-          </span>
-        </sidebar-link>
-        <sidebar-link
-          :to="{ name: 'form-wizard' }">
-          <span slot="title">
-            <span>{{ $t('menu.formWizards') }}</span>
-          </span>
-        </sidebar-link>
-        <sidebar-link
-          :to="{ name: 'medium-editor' }">
-          <span slot="title">
-            <span>{{ $t('menu.mediumEditor') }}</span>
-          </span>
-        </sidebar-link>
       </sidebar-link-group>
        <sidebar-link
         :to="{ name: 'product' }">
@@ -59,11 +27,9 @@
           <span>{{ $t('menu.product') }}</span>
         </span>
       </sidebar-link>
->>>>>>> d5e8b55b61892b977d58501133519a126647913c
     </template>
   </vuestic-sidebar>
 </template>
-
 <script>
 
   import VuesticSidebar from '../../../vuestic-theme/vuestic-components/vuestic-sidebar/VuesticSidebar'
